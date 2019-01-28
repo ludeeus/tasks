@@ -8,7 +8,9 @@
 while true; do
   echo "Running hourly tasks."
   python3 -m pip install -U customjson
-  customjson --token $GHTOKEN --mode component
-  customjson --token $GHTOKEN --mode card
+  customjson --token $GHTOKEN --mode component --push
+  customjson --token $GHTOKEN --mode card --push
+
+  echo "Hourly tasks done, sleeping..."
   sleep 3600
 done
