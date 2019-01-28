@@ -21,7 +21,9 @@ RUN \
     && curl -L -s https://github.com/just-containers/s6-overlay/releases/download/v1.21.7.0/s6-overlay-amd64.tar.gz \
         | tar xvzf - -C / \
     \
-    && python3 -m pip install -U pip
+    && python3 -m pip install -U pip \
+    \
+    && python3 -m pip install repoupdater customjson
 
 # Entrypoint
 ENTRYPOINT [ "/init" ]
