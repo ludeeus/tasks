@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bash
+###############################################
+#
+#  Run daily tasks
+#
+###############################################
+
+sleep 20
+
+while true; do
+  echo "Running daily tasks."
+  sleep 86400
+done
