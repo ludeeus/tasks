@@ -19,7 +19,9 @@ RUN \
     && rm -f -r /tmp/* \
     \
     && curl -L -s https://github.com/just-containers/s6-overlay/releases/download/v1.21.7.0/s6-overlay-amd64.tar.gz \
-        | tar xvzf - -C /
+        | tar xvzf - -C / \
+    \
+    && python3 -m pip install -U pip
 
 # Entrypoint
 ENTRYPOINT [ "/init" ]
