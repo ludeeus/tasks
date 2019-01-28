@@ -10,7 +10,7 @@ sleep 20
 while true; do
   echo "Running daily tasks."
   python3 -m pip install -U repoupdater addonupdater
-  repoupdater --token $GHTOKEN --repo ludeeus/custom-component-store --pip --apk --pull-request
+  repoupdater --token $GHTOKEN --repo ludeeus/custom-component-store --pip --apk --pull_request
 
   echo "Daily tasks done, sleeping..."
   sleep 86400
