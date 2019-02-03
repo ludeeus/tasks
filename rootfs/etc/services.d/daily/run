@@ -14,10 +14,10 @@ while true; do
   repoupdater --token $GHTOKEN --repo ludeeus/custom-component-store --pip --apk --pull_request --apk_version 3.9
   repoupdater --token $GHTOKEN --repo ludeeus/tasks --apk --pull_request --apk_version 3.9
 
-  addonupdater --token $GHTOKEN--apk_version 3.8 --pull_request --addon tautulli
-  addonupdater --token $GHTOKEN--apk_version 3.8 --pull_request --addon phlex
-  addonupdater --token $GHTOKEN--apk_version 3.8 --pull_request --addon sqlite-web
-  addonupdater --token $GHTOKEN--apk_version 3.8 --pull_request --addon magicmirror
+  addonupdater --token $GHTOKEN --apk_version 3.8 --pull_request --addon tautulli
+  addonupdater --token $GHTOKEN --apk_version 3.8 --pull_request --addon phlex
+  addonupdater --token $GHTOKEN --apk_version 3.8 --pull_request --addon sqlite-web
+  addonupdater --token $GHTOKEN --apk_version 3.8 --pull_request --addon magicmirror
 
   echo "Daily tasks done, sleeping..."
   sleep 86400
