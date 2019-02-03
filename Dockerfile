@@ -23,7 +23,7 @@ RUN \
     \
     && python3 -m pip install -U pip \
     \
-    && python3 -m pip install repoupdater customjson
+    && python3 -m pip install repoupdater customjson addonupdater
 
 # Entrypoint
 ENTRYPOINT [ "/init" ]
