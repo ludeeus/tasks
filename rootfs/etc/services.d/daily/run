@@ -10,7 +10,10 @@ sleep 20
 while true; do
   echo "Running daily tasks."
   python3 -m pip install -U repoupdater addonupdater
+
   repoupdater --token $GHTOKEN --repo ludeeus/custom-component-store --pip --apk --pull_request --apk_version 3.9
+  repoupdater --token $GHTOKEN --repo ludeeus/tasks --apk --pull_request --apk_version 3.9
+
   addonupdater --token $GHTOKEN--apk_version 3.8 --pull_request --addon tautulli
   addonupdater --token $GHTOKEN--apk_version 3.8 --pull_request --addon phlex
   addonupdater --token $GHTOKEN--apk_version 3.8 --pull_request --addon sqlite-web
