@@ -11,10 +11,10 @@ ENV PYTHONUNBUFFERED=0
 # Build
 RUN \
     apk add --no-cache \
-    apk-tools=2.10.1-r0 \
+    apk-tools=2.10.3-r1 \
     bash=4.4.19-r1 \
-    curl=7.61.1-r1 \
-    python3=3.6.6-r0 \
+    curl=7.63.0-r0 \
+    python3=3.6.8-r1 \
     \
     && rm -f -r /tmp/* \
     \
