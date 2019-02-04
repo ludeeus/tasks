@@ -18,6 +18,7 @@ while true; do
   addonupdater --token $GHTOKEN --apk_version 3.8 --pull_request --addon phlex
   addonupdater --token $GHTOKEN --apk_version 3.8 --pull_request --addon sqlite-web
   addonupdater --token $GHTOKEN --apk_version 3.8 --pull_request --addon magicmirror
+  addonupdater --token $GHTOKEN --apk_version 3.8 --pull_request --addon mqtt
 
   echo "Daily tasks done, sleeping..."
   sleep 86400
