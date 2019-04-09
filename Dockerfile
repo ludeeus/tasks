@@ -14,7 +14,7 @@ RUN \
     apk-tools=2.10.3-r1 \
     bash=4.4.19-r1 \
     curl=7.64.0-r1 \
-    python3=3.6.8-r1 \
+    python3=3.6.8-r2 \
     \
     && rm -f -r /tmp/* \
     \
